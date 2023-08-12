@@ -10,7 +10,7 @@ char currentChar;
 
 for (currentChar = 'a'; currentChar <= 'z'; currentChar++)
 {
-if (currentChar != 'e' || currentChar != 'q')
+if (currentChar != 'e' && currentChar != 'q')
 {
 putchar(currentChar);
 }
