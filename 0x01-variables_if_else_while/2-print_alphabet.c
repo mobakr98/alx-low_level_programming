@@ -8,7 +8,6 @@ int main(void)
 {
 char currentChar;
 
-printf("Lowercase Alphabets: \n");
 for (currentChar = 'a'; currentChar <= 'z'; currentChar++)
 {
 	printf("%c", currentChar);
