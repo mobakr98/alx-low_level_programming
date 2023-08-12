@@ -11,7 +11,8 @@ char currentChar;
 printf("Lowercase Alphabets: \n");
 for (currentChar = 'a'; currentChar <= 'z'; currentChar++)
 {
-	printf("%c\n", currentChar);
+	printf("%c", currentChar);
 }
+printf("\n");
 return (0);
 }
