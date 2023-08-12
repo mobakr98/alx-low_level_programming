@@ -10,8 +10,8 @@ char currentChar;
 
 for (currentChar = 'a'; currentChar <= 'z'; currentChar++)
 {
-	printf("%c", currentChar);
+	putchar(currentChar);
 }
-printf("\n");
+putchar('\n');
 return (0);
 }
