@@ -1,5 +1,6 @@
 #include "main.h"
 #include <unistd.h>
+
 /**
  * main - Entry point
  *
@@ -7,11 +8,12 @@
  */
 int main(void)
 {
-char i;
+    char i;
 
-for (i = 'a'; i <= 'z'; i++)
-{
-	_putchar(i);
-}
-_putchar("\n");
+    for (i = 'a'; i <= 'z'; i++)
+    {
+        _putchar(i);
+    }
+    _putchar('\n');
+    return 0;
 }
