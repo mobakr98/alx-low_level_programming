@@ -4,6 +4,8 @@
 /**
  * print_sign - main function
  *
+ * @n: number to check
+ *
  * Return: 1, 0, or -1
  *
  */
