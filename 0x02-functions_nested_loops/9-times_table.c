@@ -26,7 +26,6 @@ else if (z <= 9)
 {
 _putchar (',');
 _putchar (' ');
-_putchar (' ');
 _putchar (z + '0');
 }
 else
