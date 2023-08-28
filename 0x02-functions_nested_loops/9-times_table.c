@@ -10,15 +10,16 @@ void times_table(void)
 {
 int x;
 int y;
-int multi;
+int z;
 
 for (x = 0; x <= 9; x++)
 {
 for (y = 0; y <= 9; y++)
 {
 z = x * y;
-return (z);
-_putchar ('  ');
+_putchar (z);
+_putchar (',');
+_putchar (' ');
 }
 _putchar ('n');
 }
