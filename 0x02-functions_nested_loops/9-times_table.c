@@ -17,7 +17,7 @@ for (x = 0; x <= 9; x++)
 for (y = 0; y <= 9; y++)
 {
 z = x * y;
-_putchar (z);
+_putchar ('0' + z);
 _putchar (',');
 _putchar (' ');
 }
