@@ -41,4 +41,12 @@ int _isalpha(int c);
  * Returns -1 and prints - if n is less than zero
  */
 int print_sign(int n);
+
+/**
+ * _abs - function to compute the absolute value of an integer
+ *
+ * @int: integer
+ * Return: abs value of an integer
+ */
+int _abs(int);
 #endif
