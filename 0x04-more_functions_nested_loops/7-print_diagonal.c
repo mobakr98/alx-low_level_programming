@@ -18,6 +18,8 @@ if (i <= 0)
 putchar ('\n');
 return;
 }
+else
+{
 for (i = 1; i <= n; i++)
 {
 for (j = 1; j <= i; j++)
@@ -26,5 +28,6 @@ putchar (' ');
 }
 putchar ('\\');
 putchar ('\n');
+}
 }
 }
