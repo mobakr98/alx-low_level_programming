@@ -21,7 +21,7 @@ for (i = 0; i <= 10; i++)
 {
 for (c = '@'; c <= 'N'; c++)
 {
-putchar (c);
+putchar ('0' + c);
 }
 }
 putchar ('\n');
