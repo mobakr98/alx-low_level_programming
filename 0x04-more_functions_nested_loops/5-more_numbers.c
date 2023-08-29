@@ -20,11 +20,11 @@ for (y = 0; y <= 14; y++)
 z = y;
 if (y > 9)
 {
-putchar (1 + 48);
+_putchar (1 + 48);
 z = y % 10;
 }
-putchar (z + 48);
+_putchar (z + 48);
 }
-putchar ('\n');
+_putchar ('\n');
 }
 }
