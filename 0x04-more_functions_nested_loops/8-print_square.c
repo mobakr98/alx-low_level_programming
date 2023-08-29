@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
- * print_line - function that draws a straight line in the terminal
+ * print_square - function that prints a square, followed by a new line
  *
  * @size: the size of the square
  *
