@@ -17,18 +17,17 @@ void more_numbers(void)
 int x, y, z;
 
 for (x = 1; x <= 10; x++)
-	{
-	for (y = 0; y <= 14; y++)
-		{
-		z = y;
-		if (y > 9)
-			{
-				putchar (1 + 48);
-				z = y % 10;
-			}
-			putchar (z + 48);
-		
-		}
-		putchar ('\n');
-	}
+{
+for (y = 0; y <= 14; y++)
+{
+z = y;
+if (y > 9)
+{
+putchar (1 + 48);
+z = y % 10;
+}
+putchar (z + 48);
+}
+putchar ('\n');
+}
 }
