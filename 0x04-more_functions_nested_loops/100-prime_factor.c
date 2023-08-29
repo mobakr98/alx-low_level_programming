@@ -20,7 +20,7 @@ while (i % p == 0)
 i /= p;
 }
 }
-printf("The largest prime factor is: %ld\n", p - 1);
+printf("%ld\n", p - 1);
 printf("\n");
 return (0);
 }
