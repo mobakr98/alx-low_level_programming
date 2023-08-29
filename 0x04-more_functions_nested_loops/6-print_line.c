@@ -12,7 +12,7 @@
 
 void print_line(int n)
 {
-char _;
+int i;
 
 if (n <= 0)
 {
@@ -20,6 +20,10 @@ putchar ('\n');
 }
 else
 {
-putchar (n * '_');
+for (i = 0; i <= n; i++)
+{
+putchar ('_');
+}
+putchar ('\n');
 }
 }
