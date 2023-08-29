@@ -2,23 +2,31 @@
 #include <unistd.h>
 
 /**
- * print_line - function that draws a straight line in the terminal
+ * print_number - Prints an integer using _putchar
  *
- * @n: number of times the character _ should be printed
- *
- * Return: void
+ * @n: The integer to be printed
  */
-
 void print_number(int n)
 {
-if (n == 0)
-{
-_putchar('0');
-return;
-}
-if (n < 0)
-{
-_putchar('-');
-n = -n;
-}
+    if (n < 0)
+    {
+        _putchar('-');
+        n = -n;
+    }
+
+    int length = 1;
+    int temp = n;
+    
+    while (temp / 10 != 0)
+    {
+        length *= 10;
+        temp /= 10;
+    }
+
+    while (length != 0)
+    {
+        _putchar((n / length) + '0');
+        n %= length;
+        length /= 10;
+    }
 }
