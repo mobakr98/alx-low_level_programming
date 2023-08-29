@@ -1,32 +1,22 @@
 #include "main.h"
-#include <unistd.h>
-
 /**
- * print_number - Prints an integer using _putchar
+ * print_number - prints an integer
+ * @n:.input integer parameter
  *
- * @n: The integer to be printed
+ *Owned by Bwave ICT/ Bright Daniel
  */
 void print_number(int n)
 {
-    if (n < 0)
-    {
-        _putchar('-');
-        n = -n;
-    }
+	unsigned int i = n;
 
-    int length = 1;
-    int temp = n;
-    
-    while (temp / 10 != 0)
-    {
-        length *= 10;
-        temp /= 10;
-    }
-
-    while (length != 0)
-    {
-        _putchar((n / length) + '0');
-        n %= length;
-        length /= 10;
-    }
+	if (n < 0)
+	{
+		_putchar(45);
+		i = -i;
+	}
+	if (i / 10)
+	{
+		print_number(i / 10);
+	}
+	_putchar(i % 10 + '0');
 }
