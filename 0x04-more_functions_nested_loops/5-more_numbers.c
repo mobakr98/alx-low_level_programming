@@ -14,15 +14,21 @@
 
 void more_numbers(void)
 {
-char c;
-int i;
+int x, y, z;
 
-for (i = 0; i <= 10; i++)
-{
-for (c = '@'; c <= 'N'; c++)
-{
-putchar ('0' + c);
-}
-}
-putchar ('\n');
+for (x = 1; x <= 10; x++)
+	{
+	for (y = 0; y <= 14; y++)
+		{
+		z = y;
+		if (y > 9)
+			{
+				putchar (1 + 48);
+				z = y % 10;
+			}
+			putchar (z + 48);
+		
+		}
+		putchar ('\n');
+	}
 }
