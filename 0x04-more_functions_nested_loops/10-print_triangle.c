@@ -16,10 +16,6 @@ int i;
 int j;
 int spaces;
 
-if (size < 0)
-{
-return;
-}
 for (i = 1; i <= size; i++)
 {
 spaces = size - i;
