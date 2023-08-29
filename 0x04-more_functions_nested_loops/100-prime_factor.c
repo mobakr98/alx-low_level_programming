@@ -21,7 +21,6 @@ i /= p;
 }
 }
 printf("%ld\n", p - 1);
-printf("\n");
 return (0);
 }
 
