@@ -6,13 +6,13 @@
  *
  * @c: character to check
  *
- * Return: 1 if c is uppercase, 0 otherwise
+ * Return: 1 if c is digit, 0 otherwise
  *
  */
 
-int _isupper(int c)
+int _isdigit(int c)
 {
-if (c >= 'A' && c <= 'Z')
+if (c >= 0 && c <= 9)
 {
 return (1);
 }
