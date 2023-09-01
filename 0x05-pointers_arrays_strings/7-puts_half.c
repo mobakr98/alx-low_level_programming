@@ -18,16 +18,14 @@ for (index = 0; str[index] != '\0'; index++)
 {
 if (index % 2 == 0)
 {
-index = index / 2;
-for (index++; str[index] != '\0'; index++)
+for (index = index / 2; str[index] != '\0'; index++)
 {
 _putchar(str[index]);
 }
 }
 else
 {
-index = (index - 1) / 2;
-for (index++; str[index] != '\0'; index++)
+for (index = (index - 1) / 2; str[index] != '\0'; index++)
 {
 _putchar(str[index]);
 }
