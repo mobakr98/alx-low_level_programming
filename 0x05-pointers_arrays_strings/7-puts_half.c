@@ -13,19 +13,22 @@
 void puts_half(char *str)
 {
 int index;
+int n;
 
 for (index = 0; str[index] != '\0'; index++)
 {
 if (index % 2 == 0)
 {
-for (index = index / 2; str[index] != '\0'; index++)
+n = index / 2;
+for (index = n; str[index] != '\0'; index++)
 {
 _putchar(str[index]);
 }
 }
 else
 {
-for (index = (index - 1) / 2; str[index] != '\0'; index++)
+n = (index -1) / 2;
+for (index = n; str[index] != '\0'; index++)
 {
 _putchar(str[index]);
 }
