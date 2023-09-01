@@ -12,26 +12,25 @@
 
 void puts_half(char *str)
 {
-int index;
+int i;
 int n;
 
-for (index = 0; str[index] != '\0'; index++)
+for (i = 0; str[i] != '\0'; i++)
 {
-if (index % 2 == 0)
+;
+}
+if (i % 2 == 0)
 {
-n = index / 2;
-for (index = n; str[index] != '\0'; index++)
+for (n = i / 2; str[n] != '\0'; n++)
 {
-_putchar(str[index]);
+_putchar(str[n]);
 }
 }
 else
 {
-n = (index -1) / 2;
-for (index = n; str[index] != '\0'; index++)
+for (n = (i - 1) / 2; str[n] != '\0'; n++)
 {
-_putchar(str[index]);
-}
+_putchar(str[n]);
 }
 }
 _putchar('\n');
