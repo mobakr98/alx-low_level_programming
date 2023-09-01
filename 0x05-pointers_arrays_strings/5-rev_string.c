@@ -12,16 +12,18 @@
 
 void rev_string(char *s)
 {
-int index;
-int len;
-char temp;
+	int a = 0, b, c;
+	char d;
 
-len = _strlen(s);
-for (index = 0; index < len / 2; index++)
-{
-temp = s[index];
-s[index] = s[len - index - 1];
-s[len - index - 1] = temp;
-}
-_putchar ('\n');
+	while (s[a] != '\0')
+	{
+		a++;
+	}
+	c = a - 1;
+	for (b = 0; c >= 0 && b < c; c--, b++)
+	{
+		d = s[b];
+		s[b] = s[c];
+		s[c] = d;
+	}
 }
