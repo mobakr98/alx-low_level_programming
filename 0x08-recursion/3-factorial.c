@@ -13,7 +13,6 @@ int factorial(int n)
 {
 int fact;
 
-fact = n;
 if (n < 0)
 {
 return (-1);
@@ -24,8 +23,7 @@ return (1);
 }
 else
 {
-factorial(n - 1);
-fact = fact *  n;
+fact = factorial(n - 1) *  n;
 }
 return (fact);
 }
