@@ -4,10 +4,10 @@
  * _pow_recursion - function that returns the value of x
  * raised to the power of y
  *
- * @x: 1st parameter
- * @y: 2nd parameter
+ * @x:int parameter
+ * @y:int parameter
  *
- * Retrurn: the value of the power (int)
+ * Return: int value of the power process
  */
 
 int _pow_recursion(int x, int y)
