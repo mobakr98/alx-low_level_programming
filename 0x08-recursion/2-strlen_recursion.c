@@ -18,5 +18,5 @@ if (*s)
 counter++;
 counter += _strlen_recursion(s + 1);
 }
-return(counter);
+return (counter);
 }
