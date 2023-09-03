@@ -24,7 +24,7 @@ return (1);
 else
 {
 fact = 1;
-fact *= n;
+fact = fact *  n;
 factorial(n - 1);
 }
 return (fact);
