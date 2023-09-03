@@ -23,5 +23,5 @@ else
 fact *= n;
 factorial(n - 1);
 }
-return (0);
+return (fact);
 }
