@@ -18,5 +18,5 @@ for (index = 0; s[index] != '\0'; index++)
 {
 counter++;
 }
-_putchar('0' + counter);
+return(counter);
 }
