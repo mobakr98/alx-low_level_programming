@@ -11,4 +11,7 @@ int _strlen_recursion(char *s);
 
 int _pow_recursion(int x, int y);
 
+int actual_sqrt_recursion(int n, int i);
+int _sqrt_recursion(int n);
+
 #endif/*MAIN_H*/
