@@ -14,8 +14,9 @@ int index;
 int counter;
 
 counter = 0;
-for (index = 0; s[index] != '\0'; index++)
+if (*s)
 {
+_strlen_recursion(s + 1);
 counter++;
 }
 return(counter);
