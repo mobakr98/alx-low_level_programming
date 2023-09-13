@@ -1,34 +1,80 @@
 #include "3-calc.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
- * get_op_func - function pointer that selects the correct function to perform
- * the operation asked by the user
- * @s: the operator given by the user
- *
- * Return: pointer to the function that corresponds to the
- * operator given as a parameter
- */
+  * op_add - entry point
+  * @a: 1st param
+  * @b: 2nd param
+  *
+  * Return: summation
+  */
 
-int (*get_op_func(char *s))(int, int)
+int op_add(int a, int b)
 {
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
-	};
-	int i;
+	return (a + b);
+}
 
-	i = 0;
+/**
+  * op_sub - entry point
+  * @a: 1st param
+  * @b: 2nd param
+  *
+  * Return: subtraction
+  */
 
-	while (ops[i].op)
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+
+/**
+  * op_mul - entry point
+  * @a: 1st param
+  * @b: 2sn param
+  *
+  * Return: multiplication
+  */
+
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+
+/**
+  * op_div - entry point
+  * @a: 1st param
+  * @b: 2nd param
+  *
+  * Return: division
+  */
+
+int op_div(int a, int b)
+{
+	if (b == 0)
 	{
-		if (strcmp(ops[i].op, s) == 0)
-			return (ops[i].f);
-		i++;
+		printf("Error\n");
+		exit(100);
 	}
 
-	return (NULL);
+	return (a / b);
+}
+
+/**
+  * op_mod - entry point
+  * @a: 1st param
+  * @b: 2nd param
+  *
+  * Return: remainder
+  */
+
+int op_mod(int a, int b)
+{
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
+	return (a % b);
 }
